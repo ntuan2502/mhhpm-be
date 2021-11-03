@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/table-statuses",
+      "handler": "table-status.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/table-statuses/count",
+      "handler": "table-status.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/table-statuses/:id",
+      "handler": "table-status.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/table-statuses",
+      "handler": "table-status.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/table-statuses/:id",
+      "handler": "table-status.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/table-statuses/:id",
+      "handler": "table-status.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

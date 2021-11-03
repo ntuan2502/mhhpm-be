@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "table_statuses",
+  "info": {
+    "name": "tableStatus",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "tables": {
+      "collection": "table",
+      "via": "tableStatus"
+    }
+  }
+}
