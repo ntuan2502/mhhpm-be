@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bills",
+  "info": {
+    "name": "bill",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string",
+      "required": false
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "bills"
+    },
+    "total": {
+      "type": "float"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Pending",
+        "Done"
+      ],
+      "default": "Pending"
+    },
+    "bill_details": {
+      "via": "bill",
+      "collection": "bill-detail"
+    },
+    "table": {
+      "model": "table",
+      "via": "bills"
+    }
+  }
+}

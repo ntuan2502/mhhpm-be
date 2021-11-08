@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bill_details",
+  "info": {
+    "name": "billDetail",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "food": {
+      "model": "food",
+      "via": "bill_detail"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "bill": {
+      "via": "bill_details",
+      "model": "bill"
+    },
+    "price": {
+      "type": "float",
+      "required": true
+    }
+  }
+}

@@ -18,6 +18,10 @@
     "tableStatus": {
       "via": "tables",
       "model": "table-status"
+    },
+    "bills": {
+      "via": "table",
+      "collection": "bill"
     }
   }
 }

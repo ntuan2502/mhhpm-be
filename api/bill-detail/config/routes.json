@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bill-details",
+      "handler": "bill-detail.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bill-details/count",
+      "handler": "bill-detail.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bill-details/:id",
+      "handler": "bill-detail.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bill-details",
+      "handler": "bill-detail.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bill-details/:id",
+      "handler": "bill-detail.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bill-details/:id",
+      "handler": "bill-detail.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

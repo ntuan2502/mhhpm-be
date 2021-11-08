@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "foods",
+  "info": {
+    "name": "Food",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "videos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "foods",
+      "dominant": true
+    },
+    "prices": {
+      "type": "biginteger",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Available",
+        "Unavailable"
+      ],
+      "default": "Available",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "bill_detail": {
+      "via": "food",
+      "model": "bill-detail"
+    }
+  }
+}
