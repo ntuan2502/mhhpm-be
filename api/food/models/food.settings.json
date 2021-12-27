@@ -40,8 +40,8 @@
       "type": "richtext"
     },
     "tags": {
-      "collection": "tag",
       "via": "foods",
+      "collection": "tag",
       "dominant": true
     },
     "prices": {
