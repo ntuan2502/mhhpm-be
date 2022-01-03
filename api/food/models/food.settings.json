@@ -65,6 +65,10 @@
     "bill_detail": {
       "via": "food",
       "model": "bill-detail"
+    },
+    "comments": {
+      "via": "food",
+      "collection": "comment"
     }
   }
 }

@@ -24,16 +24,17 @@
       "model": "user",
       "via": "bills"
     },
-    "total": {
+    "total_prices": {
       "type": "float"
     },
     "status": {
       "type": "enumeration",
       "enum": [
-        "Pending",
-        "Done"
+        "null",
+        "pending",
+        "done"
       ],
-      "default": "Pending"
+      "default": "null"
     },
     "bill_details": {
       "via": "bill",
@@ -42,6 +43,9 @@
     "table": {
       "model": "table",
       "via": "bills"
+    },
+    "session": {
+      "type": "string"
     }
   }
 }

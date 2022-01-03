@@ -62,6 +62,10 @@
     "bills": {
       "via": "user",
       "collection": "bill"
+    },
+    "comments": {
+      "via": "user",
+      "collection": "comment"
     }
   }
 }

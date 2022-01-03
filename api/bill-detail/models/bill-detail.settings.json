@@ -23,9 +23,21 @@
       "via": "bill_details",
       "model": "bill"
     },
-    "price": {
+    "prices": {
       "type": "float",
       "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "null",
+        "pending",
+        "accept",
+        "reject"
+      ]
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }
