@@ -14,7 +14,7 @@
   "attributes": {
     "food": {
       "model": "food",
-      "via": "bill_detail"
+      "via": "bill_details"
     },
     "quantity": {
       "type": "integer"

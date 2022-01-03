@@ -62,13 +62,13 @@
       "targetField": "name",
       "required": true
     },
-    "bill_detail": {
-      "via": "food",
-      "model": "bill-detail"
-    },
     "comments": {
       "via": "food",
       "collection": "comment"
+    },
+    "bill_details": {
+      "via": "food",
+      "collection": "bill-detail"
     }
   }
 }
