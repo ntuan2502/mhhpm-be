@@ -19,9 +19,7 @@
     "images": {
       "collection": "file",
       "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
+      "allowedTypes": ["images"],
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
@@ -29,9 +27,7 @@
     "videos": {
       "collection": "file",
       "via": "related",
-      "allowedTypes": [
-        "videos"
-      ],
+      "allowedTypes": ["videos"],
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
@@ -50,10 +46,7 @@
     },
     "status": {
       "type": "enumeration",
-      "enum": [
-        "Available",
-        "Unavailable"
-      ],
+      "enum": ["Available", "Unavailable"],
       "default": "Available",
       "required": true
     },
@@ -66,7 +59,6 @@
       "via": "food",
       "collection": "comment"
     },
-<<<<<<< HEAD
     "rate": {
       "type": "decimal",
       "default": 0,
@@ -78,11 +70,10 @@
       "required": true,
       "min": 0,
       "default": 0
-=======
+    },
     "bill_details": {
       "via": "food",
       "collection": "bill-detail"
->>>>>>> 38455b484ec5c85e1f5aecbd80d214da89f4284e
     }
   }
 }

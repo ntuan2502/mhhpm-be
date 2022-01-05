@@ -13,13 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "food": {
-<<<<<<< HEAD
-      "via": "bill_detail",
-      "model": "food"
-=======
       "model": "food",
       "via": "bill_details"
->>>>>>> 38455b484ec5c85e1f5aecbd80d214da89f4284e
     },
     "quantity": {
       "type": "integer"
@@ -34,12 +29,7 @@
     },
     "status": {
       "type": "enumeration",
-      "enum": [
-        "null",
-        "pending",
-        "accept",
-        "reject"
-      ]
+      "enum": ["null", "pending", "accept", "reject"]
     },
     "description": {
       "type": "richtext"
