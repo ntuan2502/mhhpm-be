@@ -32,7 +32,9 @@
       "enum": [
         "null",
         "pending",
-        "done"
+        "reject",
+        "done",
+        "paid"
       ],
       "default": "null"
     },

@@ -66,9 +66,23 @@
       "via": "food",
       "collection": "comment"
     },
+<<<<<<< HEAD
+    "rate": {
+      "type": "decimal",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "sold": {
+      "type": "integer",
+      "required": true,
+      "min": 0,
+      "default": 0
+=======
     "bill_details": {
       "via": "food",
       "collection": "bill-detail"
+>>>>>>> 38455b484ec5c85e1f5aecbd80d214da89f4284e
     }
   }
 }
