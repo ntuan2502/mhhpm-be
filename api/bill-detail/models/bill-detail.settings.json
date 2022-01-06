@@ -29,9 +29,17 @@
     },
     "status": {
       "type": "enumeration",
-      "enum": ["null", "pending", "accept", "reject"]
+      "enum": [
+        "null",
+        "pending",
+        "accept",
+        "reject"
+      ]
     },
     "description": {
+      "type": "richtext"
+    },
+    "user_description": {
       "type": "richtext"
     }
   }

@@ -19,7 +19,9 @@
     "images": {
       "collection": "file",
       "via": "related",
-      "allowedTypes": ["images"],
+      "allowedTypes": [
+        "images"
+      ],
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
@@ -27,7 +29,9 @@
     "videos": {
       "collection": "file",
       "via": "related",
-      "allowedTypes": ["videos"],
+      "allowedTypes": [
+        "videos"
+      ],
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
@@ -46,7 +50,10 @@
     },
     "status": {
       "type": "enumeration",
-      "enum": ["Available", "Unavailable"],
+      "enum": [
+        "Available",
+        "Unavailable"
+      ],
       "default": "Available",
       "required": true
     },
