@@ -66,6 +66,9 @@
     "comments": {
       "via": "user",
       "collection": "comment"
+    },
+    "avatarUrl": {
+      "type": "string"
     }
   }
 }

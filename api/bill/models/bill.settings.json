@@ -20,9 +20,9 @@
       "required": false
     },
     "user": {
+      "via": "bills",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "bills"
+      "model": "user"
     },
     "total_prices": {
       "type": "float"
