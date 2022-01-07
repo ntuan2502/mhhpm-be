@@ -33,8 +33,7 @@
         "null",
         "pending",
         "reject",
-        "done",
-        "paid"
+        "done"
       ],
       "default": "null"
     },
