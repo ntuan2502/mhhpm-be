@@ -42,8 +42,8 @@
       "collection": "bill-detail"
     },
     "table": {
-      "model": "table",
-      "via": "bills"
+      "via": "bills",
+      "model": "table"
     },
     "session": {
       "type": "string"

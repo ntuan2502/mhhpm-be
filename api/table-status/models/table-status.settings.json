@@ -17,8 +17,8 @@
       "required": true
     },
     "tables": {
-      "collection": "table",
-      "via": "tableStatus"
+      "via": "tableStatus",
+      "collection": "table"
     }
   }
 }
